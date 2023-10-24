@@ -1,1 +1,53 @@
-@import url("../form.css");
+.login-container31 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.login-form31 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-container31 {
+  margin-bottom: 15px;
+}
+
+.input31 {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+.input31:hover {
+  border: 1px solid #007bff;
+}
+
+.input:focus31 {
+  border: 1px solid #007bff;
+}
+
+.submit-button31 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button31:hover {
+  background-color: #0056b3;
+}
+
+.submit-button31:active {
+  background-color: #003e7d;
+}

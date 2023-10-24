@@ -23,7 +23,9 @@ import Contact from "./components/contact us/contact";
 import PeerReview from "./components/peer reviews/PeerReview/Pr";
 import JoinAsPeerForm from "./components/peer reviews/JoinAsPeerReview/pr";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import CallForPapers from "./components/papers/call for papers/call_for_papers";
+import SubmitManuscript from "./components/Submit Menuscript/aim";
+import AboutJournal from "./components/About Journal/ab";
 function AdvisoryBoard() {
   return (
     <>
@@ -101,6 +103,16 @@ function Home() {
       <br />
       <br />
       <br />
+      <AboutJournal />
+      <h3
+        style={{
+          textAlign: "center",
+          marginBottom: "-30px",
+          fontSize: "29px",
+        }}
+      >
+        BASIC INFORMATION
+      </h3>
       <br />
 
       <BasicInfo />
@@ -157,6 +169,20 @@ function JoinAsPeer() {
   );
 }
 
+function SubmitManuscriptFunc() {
+  return (
+    <>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <SubmitManuscript />
+    </>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -170,14 +196,18 @@ function App() {
           <Route path="/Policy" element={<PolicyFunction />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Faqs" element={<Faqfunction />} />
+          <Route path="/CallForPapers" element={<CallForPapers />} />
 
           <Route path="/guidelines" element={<AuthorGuides />} />
           <Route path="/submitManuscript" element={<ManuScr />} />
 
           <Route path="/PeerReview" element={<PeerReviewFunction />} />
           <Route path="/joinReviewer" element={<JoinAsPeer />} />
+          <Route path="/AuthorGuidelines" element={<AuthorGuidelines />} />
+          <Route path="/SubmitMenuscript" element={<SubmitManuscriptFunc />} />
 
           <Route path="/addContact" element={<ContactFunction />} />
+          <Route path="/Aim&Scope" element={<AimandScopePage />} />
         </Routes>
         <Footer />
       </Router>

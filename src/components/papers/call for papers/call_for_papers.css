@@ -1,0 +1,58 @@
+#header {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#title {
+  font-size: 24px;
+}
+
+#content {
+  margin: 20px;
+}
+
+.intro {
+  font-size: 16px;
+}
+
+.domain {
+  font-size: 16px;
+}
+
+#domains,
+#important-dates {
+  margin: 20px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.domain-list,
+.date {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+#charges {
+  /* background-color: #2ecc71; */
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+#instructions {
+  margin: 20px;
+}
+
+div#cfp36 {
+  margin-top: 100px;
+  width: 78%;
+  margin-inline: auto;
+}
+
+strong {
+  font-size: 23px;
+  color: darkblue;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../Submit Menuscript/aim.css";
 import "./guidelines.css";
 
 function Guidelines() {
@@ -17,7 +17,7 @@ function Guidelines() {
               manuscripts through email or submit online at the website of this
               journal mentioned below.
             </p>
-            <button class="button-1"> Show Guidelines</button>
+            <button class="button-44"> Show Guidelines</button>
           </div>
         </div>
       </div>

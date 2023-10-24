@@ -4,7 +4,9 @@ import "./preparation.css";
 function Members() {
   return (
     <div class="container13">
-      <h2 style={{ color: "blueviolet" }}>Author’s Guidelines</h2>
+      <h2 className="h237" style={{ color: "blueviolet" }}>
+        Author’s Guidelines
+      </h2>
       <h3 style={{ textAlign: "center" }}>
         The manuscript should be submitted according to format as follow:
       </h3>

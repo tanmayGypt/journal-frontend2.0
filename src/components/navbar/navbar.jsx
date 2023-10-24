@@ -21,6 +21,22 @@ function Navbar() {
               </li>
             </ul>
           </li>
+
+          <li className="extends16">
+            <a href="google.co.in">Author</a>
+            <ul>
+              <li className="extends16">
+                <a href="/AuthorGuidelines">Author Guidelines</a>
+
+                <li className="extends16">
+                  <a href="/SubmitMenuscript">Submit Menuscript</a>
+                </li>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/Aim&Scope">Aim & Scope</a>
+          </li>
           <li>
             <a href="/Policy">Policy</a>
           </li>
@@ -34,7 +50,7 @@ function Navbar() {
                 <a href="google.co.in">Papers</a>
                 <ul>
                   <li>
-                    <a href="google.co.in">Call For Paper</a>
+                    <a href="/CallForPapers">Call For Paper</a>
                   </li>
                   <li>
                     <a href="google.co.in">Paper Template</a>

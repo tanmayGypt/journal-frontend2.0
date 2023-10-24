@@ -5,6 +5,7 @@ function Members() {
   return (
     <div class="container8">
       <h2 id="tableheading8">Members</h2>
+      <button class="button-44">Add Members</button>
       <ul class="responsive-table8">
         <li class="table-header8">
           <div class="col8 col-18">Name</div>
