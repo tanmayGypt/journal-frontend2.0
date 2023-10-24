@@ -1,0 +1,240 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap";
+
+/* relevant portion */
+#toggle-pseudos:checked ~ .container .ul26 {
+  --separator: ",";
+  --connector: "and";
+
+  padding: 0;
+  margin: 0;
+  display: inline;
+  list-style-type: none;
+}
+
+/* spread these list items as text nodes */
+#toggle-pseudos:checked ~ .container .li26 {
+  display: inline;
+}
+
+#toggle-pseudos:not(:checked) ~ .container .li26 {
+  margin: 0.5em 0;
+}
+
+#toggle-pseudos:not(:checked) ~ .container .li26::after {
+  content: none;
+}
+
+#high.li26ght-pseudos:not(:checked) ~ .container .li26::after {
+  color: inherit;
+  font-weight: 500;
+}
+
+/* "Add a comma after each .li26st item." */
+.li26::after {
+  content: var(--separator);
+  color: #ef5016;
+  transition: color ease 200ms;
+  font-weight: 700;
+}
+
+/* "Hold on, add a comma along with an 'and' after the second last .li26st item." */
+.li26:nth-last-of-type(2)::after {
+  content: var(--separator) " " var(--connector) " ";
+  color: #0058ff;
+}
+
+/* "Hang on, only add an 'and' after the second last .li26st item if it's the first .li26st item as well." */
+.li26:first-of-type:nth-last-of-type(2)::after {
+  content: " " var(--connector);
+  color: #178717;
+}
+
+/* "Finally, add a fullstop after the last .li26st item." */
+.li26:last-of-type::after {
+  content: ".";
+  color: #0000ff;
+}
+
+/* no margin for item containers */
+.ul26 {
+  margin: 0;
+  list-style-type: square;
+}
+
+.li26::marker {
+  color: var(--accent-alpha);
+}
+
+/* layout and decoration */
+:root {
+  --accent: #7a24f2;
+  --accent-alpha: #7a24f2bb;
+  --text: #000;
+  --text-secondary: #000000cc;
+  --container: #fff;
+  --section-color: #fff;
+}
+
+::selection {
+  background-color: var(--accent-alpha);
+  color: var(--section-color);
+}
+
+/* keep the <main> thing the <main> thing */
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+  margin-top: -0.3ch; /* wanna get rid of those annoying margin */
+  font-weight: 700;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h1::before,
+h2::before {
+  content: "#"; /* some icing, I suppose */
+  color: var(--text-secondary);
+  font-size: 0.8em;
+}
+
+h2::before {
+  font-size: 1em;
+}
+
+p {
+  margin: 1em 0;
+  line-height: 1.7;
+}
+
+/* checkboxes (disguised as toggles) */
+input {
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  margin: 0 -7px; /* a typical Windows checkbox is 14x14 in size */
+}
+
+input:checked + label {
+  color: var(--accent);
+}
+
+input:checked + label::before {
+  transform: translateY(30%) scaleX(1);
+  transform-origin: left top;
+}
+
+input:focus-visible + label {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+label {
+  position: relative;
+  margin: 0 0.6em 1em 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color ease 0.4s;
+  color: var(--text-secondary);
+  display: inline-block;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(30%) scaleX(0);
+  width: 100%;
+  height: 0.72em;
+  background-color: currentColor;
+  z-index: -1;
+  transform-origin: right top;
+  transition: transform ease 0.4s;
+  opacity: 0.4;
+}
+
+label:hover {
+  color: var(--text);
+}
+
+/* showcase the concept */
+
+.container section {
+  margin: 1.8em 0;
+}
+
+.container div {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* Made with Coffee, Care, and Curiosity by @ShadowShahriar */
+h2.PeerHeading {
+  font-size: 30px;
+  text-decoration: underline;
+}
+li.li26 {
+  font-size: 16px;
+  line-height: 30px;
+}
+h3#peerReviewHeading {
+  font-size: 30px;
+  text-align: center;
+  line-height: 0px;
+  margin-top: 75px;
+}
+
+.button-25 {
+  background-color: #36a9ae;
+  background-image: linear-gradient(#37adb2, #329ca0);
+  border: 1px solid #2a8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow 0.05s ease-in-out, opacity 0.05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 12%;
+  margin: auto;
+}
+.button-25:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset,
+    rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: 0.15s, 0.15s;
+}
+
+.button-25:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.button-25:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.button-25:disabled:active {
+  pointer-events: none;
+}
+
+.button-25:disabled:hover {
+  box-shadow: none;
+}

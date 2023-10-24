@@ -1,0 +1,19 @@
+.peerreview {
+  /* margin-top: 138px; */
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 88px;
+}
+h3.prheading25 {
+  text-align: center;
+  font-size: 35px;
+  color: blueviolet;
+  text-decoration: underline;
+}
+h3.h325 {
+  font-size: 20px;
+  line-height: 12px;
+  text-align: center;
+  color: indigo;
+}
